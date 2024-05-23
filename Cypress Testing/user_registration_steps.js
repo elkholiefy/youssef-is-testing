@@ -12,7 +12,6 @@ describe("User Registration", () => {
     cy.get('input[name="last name"]').type("as tester");
     cy.get('input[name="Address"]').type("NA");
     cy.get('input[name="Country"]').type("India");
-    // Fill in other address fields
     cy.contains("Create Account").click();
     cy.contains("ACCOUNT CREATED!").should("be.visible");
     cy.contains("Continue").should("be.visible");
