@@ -7,7 +7,6 @@ describe("User Registration", () => {
     cy.contains("Signup").click();
     cy.url().should("include", "/signup");
     cy.get('input[name="Password"]').type("123456789");
-    // Fill in other fields (Date of Birth, gender, newsletter, etc.)
     cy.get('input[name="First name"]').type("Youssef");
     cy.get('input[name="last name"]').type("as tester");
     cy.get('input[name="Address"]').type("NA");
